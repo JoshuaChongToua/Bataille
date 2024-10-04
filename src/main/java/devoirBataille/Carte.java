@@ -54,7 +54,6 @@ public class Carte {
     public void distribution(Joueur j1, Joueur j2, ArrayList<Carte> cartes) {
         int tour = 0;
         for (Carte carte : cartes ) {
-
             if (tour == 0) {
                 j1.ajouterCarte(carte);
                 tour = 1;

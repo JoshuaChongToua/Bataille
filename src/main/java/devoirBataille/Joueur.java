@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Joueur {
     private ArrayList<Carte> cartes = new ArrayList<>();
-    private int score;
     private String nom;
 
     public Joueur(String nom) {
@@ -27,6 +26,9 @@ public class Joueur {
             System.out.println(carte.getValue() + " de " + carte.getCouleur());
         }
     }
+    public int getScore() {
+        return cartes.size();
+    }
 
 
     public String getNom() {
@@ -45,11 +47,6 @@ public class Joueur {
         this.cartes = cartes;
     }
 
-    public int getScore() {
-        return cartes.size();
-    }
 
-    public void setScore(int score) {
-        this.score += score;
-    }
+
 }

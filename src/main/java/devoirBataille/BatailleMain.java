@@ -36,7 +36,7 @@ public class BatailleMain {
                 for(Carte carte:table) {
                     j1.ajouterCarte(carte);
                 }
-                System.out.println(j1.getScore());
+                System.out.println("Score j1 : "+j1.getScore());
             }
             else if (Objects.equals(cartes.comparateur(carteJ1, carteJ2), "egalite")) {
                 System.out.println("!!! BATAILLE !!!");
@@ -51,14 +51,14 @@ public class BatailleMain {
                     for(Carte carte:table) {
                         j1.ajouterCarte(carte);
                     }
-                    System.out.println(j1.getScore());
+                    System.out.println("Score j1 : "+j1.getScore());
                 }
                 else {
                     System.out.println(j2.getNom()+" remporte la manche");
                     for(Carte carte:table) {
                         j2.ajouterCarte(carte);
                     }
-                    System.out.println(j2.getScore());
+                    System.out.println("Score j2 : "+j2.getScore());
                 }
             }
             else {
@@ -66,12 +66,12 @@ public class BatailleMain {
                 for(Carte carte:table) {
                     j2.ajouterCarte(carte);
                 }
-                System.out.println(j2.getScore());
+                System.out.println("Score j2 : "+j2.getScore());
             }
             table.clear();
             System.out.println("-----------------------------------");
 
-            Thread.sleep(2000);
+            //Thread.sleep(2000);
 
         }
 
