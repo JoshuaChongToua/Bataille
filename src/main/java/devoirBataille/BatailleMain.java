@@ -71,7 +71,7 @@ public class BatailleMain {
             table.clear();
             System.out.println("-----------------------------------");
 
-            //Thread.sleep(2000);
+            Thread.sleep(2000);
 
         }
 
